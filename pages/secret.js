@@ -9,7 +9,7 @@ const Secret = () => {
     useEffect(() => {
         const fetchData = async () => {
             const res = await fetch(
-                'https://next-auth-intro-nkbypcsfm-ianbrdeguzman.vercel.app/api/secret'
+                'https://next-auth-intro.vercel.app/api/secret'
             );
             const data = await res.json();
             setData(data);
