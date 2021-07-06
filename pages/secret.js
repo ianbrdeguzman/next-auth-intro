@@ -8,7 +8,9 @@ const Secret = () => {
 
     useEffect(() => {
         const fetchData = async () => {
-            const res = await fetch('http://localhost:3000/api/secret');
+            const res = await fetch(
+                'https://next-auth-intro-nkbypcsfm-ianbrdeguzman.vercel.app/api/secret'
+            );
             const data = await res.json();
             setData(data);
         };
